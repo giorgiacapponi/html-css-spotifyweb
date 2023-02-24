@@ -29,14 +29,16 @@
                        </a>
                     </a>
                     <ul>
-                       <li> 
+                       <li class="active-sidebar"> 
                           <a id="home" href="">Home</a>
                         </li>
                         <li>
                             <a id="cerca" href="">Cerca</a>
                         </li>
                         <li>
-                            <a id="library" href="">La tua libreria</a>
+                            <a id="library" href="">
+                                <img src="img/libreria.svg" alt="">
+                                La tua libreria</a>
                         </li>
                        
                     </ul>
@@ -45,7 +47,9 @@
                     <h2>Playlist</h2>
                     <ul>
                         <li>
-                            <a id="add" href="">Crea playlist</a>
+                            <a id="add" href="">
+                                <img src="" alt="">
+                                Crea playlist</a>
                         </li>
                         <li>
                             <a href="">Nome playlist</a>
@@ -72,9 +76,12 @@
                 </section>
                 <div class="sidebar-bottom">
                     <a href="">
-                        Installa app
+                        <img src="img/download.svg" alt="">
+                        <span>installa app</span>
+                       
                     </a>
                     <hr>
+                    <img class="profile" src="img/profile.svg" alt="">
                     <h3 class="mt1rem">Jhon Doe</h3>
     
                 </div>
@@ -84,7 +91,7 @@
                 <div class="nav-content">
                     <ul class="nav-list">
                         <li>
-                            <a href="">in evidenza</a>
+                            <a href="" class="active">in evidenza</a>
                         </li>
                         <li>
                             <a href="">Podcast</a>
@@ -107,43 +114,61 @@
                     <h2>Recently Played</h2>
                     <div class="row-recently">
                         <div class="col-recently">
-                            <div class="card-recently">
+                            <div class="card-recently card">
                                 <img src="img/metal_lifting.jpg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Heavy metal</h3>
                                 <div>subtitle</div>
                             </div>
                         </div>
                         <div class="col-recently">
-                            <div class="card-recently">
+                            <div class="card-recently card">
                                 <img src="img/stranger.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Strangers Thing,Vol.1(a Netflix original series soundtrack)</h3>
                                 <div>Kyle Dixon & Micheal Stein</div>
                             </div>
                         </div>
                         <div class="col-recently">
-                            <div class="card-recently">
+                            <div class="card-recently card">
                                 <img src="img/aquietplace.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>A quiet place</h3>
                                 <div>subtitle</div>
                             </div>
                         </div>
                         <div class="col-recently">
-                            <div class="card-recently">
+                            <div class="card-recently card">
                                 <img src="img/split.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Split</h3>
                                 <div>subtitle</div>
                             </div>
                         </div>
                         <div class="col-recently">
-                            <div class="card-recently">
+                            <div class="card-recently card">
                                 <img src="img/cure.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>A cure for wellness</h3>
                                 <div>subtitle</div>
                             </div>
                         </div>
                         <div class="col-recently">
-                            <div class="card-recently">
+                            <div class="card-recently card">
                                 <img src="img/sinister.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Sinister</h3>
                                 <div>subtitle</div>
                             </div>
@@ -158,14 +183,20 @@
                     </div>
                     <div class="row-created">
                         <div class="col-created">
-                            <div class="card-created">
+                            <div class="card-created card">
                                 <img src="img/radar.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Release radar</h3>
                             </div>
                         </div>
                         <div class="col-created">
-                            <div class="card-created">
+                            <div class="card-created card">
                                 <img src="img/mixdaily.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Daily Mix 1</h3>
                             </div>
                         </div>
@@ -178,14 +209,20 @@
                     </div>
                     <div class="row-artist">
                         <div class="col-artist">
-                            <div class="card-artist">
+                            <div class="card-artist card">
                                 <img src="img/player_left.jpg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Release </h3>
                             </div>
                         </div>
                         <div class="col-artist">
-                            <div class="card-artist">
+                            <div class="card-artist card">
                                 <img src="img/einaudi.jpeg" alt="">
+                                <div class="hover-card">
+                                    <i class="fa-regular fa-circle-play fa-3x"></i>
+                                </div>
                                 <h3>Release radar</h3>
                             </div>
                         </div>
@@ -206,35 +243,85 @@
         <div class="player">
             <div class="container-player">
                 <div class="left">
-                    <img src="img/sinister.jpeg" alt="">
-                    <div>
-                        <h2>sinister</h2>
-                        <h3>brano</h3>
+                    <div class="now-playing">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div>
+                            <h2>sinister</h2>
+                            <h3>brano</h3>
+                        </div>
                     </div>
-                    <a href="">
-                        <i class="fa-thin fa-heart fa-3x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-thin fa-folder fa-3x"></i>
-                    </a>
+                    <div class="icone-left">
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-regular fa-folder"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="middle">
                     <div class="middle-icone">
-                        <i class="fa-duotone fa-volume-off"></i>
-                        <i class="fa-duotone fa-volume-off"></i>
-                        <i class="fa-duotone fa-volume-off"></i>
-                        <i class="fa-duotone fa-volume-off"></i>
+                        <ul>
+                            <li> 
+                                <i class="fa-solid fa-shuffle"></i>
+
+                            </li>
+                            <li> 
+                                <i class="fa-solid fa-backward-step"></i>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-play play"></i>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward-step"></i>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+
+                            </li>
+                        </ul>
                     </div>
-                    <div class="barra">
-                        <span>0.25</span>
-                        <span>3.25</span>
+                    <div class="times">
+                        <div>0:45</div>
+                        <div class="barra">
+                            <div class="barra-green" >
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                        </div>
+                        <div>1:35</div>
                     </div>
+                   
+                  
                 </div>
+                
                 <div class="right">
-                    <i class="fa-duotone fa-volume-off"></i>
-                    <i class="fa-duotone fa-volume-off"></i>
-                    <i class="fa-duotone fa-volume-off"></i>
-                    <hr>
+                    <div class="icone-right">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-list "></i>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-desktop"></i>
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-volume-high"></i>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="volume">
+                        <div class="barra">
+                            <div class="barra-green" >
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
