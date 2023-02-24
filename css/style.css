@@ -61,9 +61,14 @@ header a{
     padding: .5em 1em;
     border-radius: 25px;
     color: white;
+    border: 3px solid;
     
     
     
+}
+/* hover  */
+header a:hover{
+    transform: scale(1.1);
 }
 @media screen and (max-width:600px){
     header{
@@ -103,8 +108,17 @@ main{
       font-size: 1.2rem;
       color: white;
 }
-.active-sidebar{
-    border-left:2px solid green;
+.active-sidebar::before{
+    display: inline-block;
+    width: 3px;
+    height: 1.5rem;
+    background-color: green;
+    content: "";
+    position:absolute;
+    left: 0;
+
+   
+   
 }
 .section-spotify ul #cerca::before{
     font-family: "Font Awesome 6 Free";
@@ -142,8 +156,12 @@ main{
     .logo-small{
         display: inline-block;
     }
+    .active-sidebar::before{
+        display: none;
+    }
     
 }
+
 /* section-playlist */
 
 .playlist ul #add::before{
@@ -403,7 +421,13 @@ main{
     color: #717171;
 
 }
-
+.icone-left{
+    color: #717171;
+}
+/* hover left */
+.icone-left a:hover {
+    color: white;
+}
 .middle{
     width: 40%;
 }
